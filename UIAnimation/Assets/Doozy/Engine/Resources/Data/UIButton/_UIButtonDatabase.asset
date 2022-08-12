@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 889794c411054f7ca8e6fbdc6728c846, type: 3}
+  m_Name: _UIButtonDatabase
+  m_EditorClassIdentifier: 
+  DatabaseType: 0
+  CategoryNames:
+  - Custom
+  - Example
+  - General
+  - TD - Login
+  - TD - Register
+  - TD - Register - Avatar
+  - TD - Register - Success
+  - TD - Login - ForgotPass
+  - TD - MainMenu - Main
+  - TD - CommonMessageBox
+  - TD - Settings
+  - TD - ChangeEmail
+  - TD - Game
+  - TD - Register - GroupNameSelection
+  - TD - Congrats
+  - TD - Quit
+  - TD - Result
+  - TD - Leaderboard
+  - TD - CreateMode
+  Categories:
+  - {fileID: 11400000, guid: 40f9e81ff80114a47a3721228ba749ed, type: 2}
+  - {fileID: 11400000, guid: 1796c637949205c4fa1c50786d2becc8, type: 2}
+  - {fileID: 11400000, guid: 14383adaa05371549afcff39b412c4d4, type: 2}
+  - {fileID: 11400000, guid: a929b5e405837b5499136a16bca787cd, type: 2}
+  - {fileID: 11400000, guid: c30dd091272b8a14c9490c88d265e53c, type: 2}
+  - {fileID: 11400000, guid: fcf48b00a9c098f488f450b6c10f544f, type: 2}
+  - {fileID: 11400000, guid: 95625b98c8898444ea47d4902e63c12a, type: 2}
+  - {fileID: 11400000, guid: a8a16f0cd034347e28d8ec999c52c302, type: 2}
+  - {fileID: 11400000, guid: 4aa27349655356b408f1e2caed26af43, type: 2}
+  - {fileID: 11400000, guid: 525a58d73af2c594bb90a26e18eaca42, type: 2}
+  - {fileID: 11400000, guid: 44f5321b1ee5ac54d88fd958b48237d8, type: 2}
+  - {fileID: 11400000, guid: ac4371fb3bc60a04195d9a75ebfadd27, type: 2}
+  - {fileID: 11400000, guid: 340a74df5e3b143059116168013dbf64, type: 2}
+  - {fileID: 11400000, guid: 1c956ed00b6bdf247b06ac538d6322b6, type: 2}
+  - {fileID: 11400000, guid: 3001ecebe3cd31d49813c44d1d2841c0, type: 2}
+  - {fileID: 11400000, guid: c84ff948afc1b3c47a08e29b599f4c50, type: 2}
+  - {fileID: 11400000, guid: d98b559d981c17c4f8df56b39f7314a0, type: 2}
+  - {fileID: 11400000, guid: e631159a9627a4f22b19b58d7bb07cbe, type: 2}

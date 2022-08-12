@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5c04155d43740f46a3223a7eb386e0c, type: 3}
+  m_Name: _UIPopupDatabase
+  m_EditorClassIdentifier: 
+  PopupNames:
+  - AccountConflict
+  - BaseMessage
+  - ConfirmContinueGame
+  - DailyReward
+  - GamePaused
+  - Settings
+  - Rating
+  - ChestInfo
+  - Support
+  Popups:
+  - {fileID: 11400000, guid: 630101cb133d6194ca50410ed36cc824, type: 2}
+  - {fileID: 11400000, guid: af6287f20c06348d09f5c13395e867e0, type: 2}
+  - {fileID: 11400000, guid: 189ad4f3350064428bda449c82c89a0b, type: 2}
+  - {fileID: 11400000, guid: 34b12c0b2a56a054091e742c9660da40, type: 2}
+  - {fileID: 11400000, guid: ab3e1212dcaf441cda8853756a7d68d9, type: 2}
+  - {fileID: 11400000, guid: cc112dcdf5b9d4296a4bca78d12aec66, type: 2}
+  - {fileID: 11400000, guid: 52d9c6bd69b15574c82acf68923bb8d7, type: 2}
+  - {fileID: 11400000, guid: 1dddeb40ceb84974f90ca3bebb36ac92, type: 2}
+  - {fileID: 11400000, guid: 94a40c648f04a6d40851b5c836e44212, type: 2}
