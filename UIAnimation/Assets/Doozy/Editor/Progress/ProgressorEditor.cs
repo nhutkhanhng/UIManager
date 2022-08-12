@@ -10,7 +10,6 @@ using Doozy.Editor.Internal;
 using Doozy.Engine.Extensions;
 using Doozy.Engine.Progress;
 using Doozy.Engine.Utils;
-using Doozy.Editor.Soundy;
 using UnityEditor;
 using UnityEditor.AnimatedValues;
 using UnityEngine;
@@ -125,7 +124,6 @@ namespace Doozy.Editor.Progress
         protected override void OnDisable()
         {
             base.OnDisable();
-            SoundyAudioPlayer.StopAllPlayers();
             ResetSimulatorTween(true, false);
         }
 

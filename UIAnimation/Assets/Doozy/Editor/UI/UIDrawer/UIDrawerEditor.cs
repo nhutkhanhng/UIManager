@@ -5,7 +5,6 @@
 using System;
 using System.Collections.Generic;
 using Doozy.Editor.Internal;
-using Doozy.Editor.Soundy;
 using Doozy.Editor.Windows;
 using Doozy.Engine.Extensions;
 using Doozy.Engine.Touchy;
@@ -243,7 +242,7 @@ namespace Doozy.Editor.UI
         protected override void OnDisable()
         {
             base.OnDisable();
-            SoundyAudioPlayer.StopAllPlayers();
+            
         }
 
         public override void OnInspectorGUI()
@@ -429,7 +428,7 @@ namespace Doozy.Editor.UI
             AnimBool finishedExpanded = GetAnimBool(finishedProperty.propertyPath, finishedProperty.isExpanded);
 
             if (DGUI.Bar.Draw(behaviorName, NORMAL_BAR_SIZE, DGUI.Bar.Caret.CaretType.Caret, ComponentColorName, behaviorExpanded))
-                SoundyAudioPlayer.StopAllPlayers();
+                
 
             GUILayout.Space(-NormalBarHeight);
 
@@ -453,7 +452,7 @@ namespace Doozy.Editor.UI
                         {
                             startExpanded.target = true;
                             finishedExpanded.value = false;
-                            SoundyAudioPlayer.StopAllPlayers();
+                            
                         }
 
                         GUILayout.Space(DGUI.Properties.Space());
@@ -468,7 +467,7 @@ namespace Doozy.Editor.UI
                         {
                             startExpanded.value = false;
                             finishedExpanded.target = true;
-                            SoundyAudioPlayer.StopAllPlayers();
+                            
                         }
                     }
                     GUILayout.EndHorizontal();
@@ -584,7 +583,7 @@ namespace Doozy.Editor.UI
                         m_animatorEventsExpanded.value = false;
                         m_gameEventsExpanded.value = false;
                         m_unityEventsExpanded.value = false;
-                        SoundyAudioPlayer.StopAllPlayers();
+                        
                     }
 
                     GUILayout.Space(DGUI.Properties.Space());
@@ -604,7 +603,7 @@ namespace Doozy.Editor.UI
                         m_animatorEventsExpanded.target = true;
                         m_gameEventsExpanded.value = false;
                         m_unityEventsExpanded.value = false;
-                        SoundyAudioPlayer.StopAllPlayers();
+                        
                     }
 
                     GUILayout.Space(DGUI.Properties.Space());
@@ -624,7 +623,7 @@ namespace Doozy.Editor.UI
                         m_animatorEventsExpanded.value = false;
                         m_gameEventsExpanded.target = true;
                         m_unityEventsExpanded.value = false;
-                        SoundyAudioPlayer.StopAllPlayers();
+                        
                     }
 
                     GUILayout.Space(DGUI.Properties.Space());
@@ -644,7 +643,7 @@ namespace Doozy.Editor.UI
                         m_animatorEventsExpanded.value = false;
                         m_gameEventsExpanded.value = false;
                         m_unityEventsExpanded.target = true;
-                        SoundyAudioPlayer.StopAllPlayers();
+                        
                     }
                 }
                 GUILayout.EndHorizontal();

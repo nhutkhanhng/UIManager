@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Doozy.Engine.Events;
-using Doozy.Engine.Soundy;
+
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -60,13 +60,7 @@ namespace Doozy.Engine.UI.Base
         {
             get
             {
-                switch (SoundData.SoundSource)
-                {
-                    case SoundSource.Soundy:      return SoundData.SoundName != SoundyManager.NO_SOUND && !string.IsNullOrEmpty(SoundData.SoundName);
-                    case SoundSource.AudioClip:   return SoundData.AudioClip != null;
-                    case SoundSource.MasterAudio: return !string.IsNullOrEmpty(SoundData.SoundName);
-                    default:                      return false;
-                }
+                return false;
             }
         }
 
@@ -101,10 +95,6 @@ namespace Doozy.Engine.UI.Base
 
         /// <summary> Game Events sent when this UIAction is executed </summary>
         public List<string> GameEvents = new List<string>();
-
-        /// <summary> SoundyData used by Soundy to play a sound when this UIAction is executed </summary>
-        public SoundyData SoundData;
-
         #endregion
 
         #region Private Variables
@@ -257,13 +247,11 @@ namespace Doozy.Engine.UI.Base
         public void PlaySound()
         {
             if (!HasSound) return;
-            SoundyManager.Play(SoundData);
         }
         
         /// <summary> Resets this instance to the default values </summary>
         public void Reset()
         {
-            SoundData = new SoundyData();
             AnimatorEvents = new List<AnimatorEvent>();
             GameEvents = new List<string>();
             Event = new UnityEvent();
@@ -292,15 +280,6 @@ namespace Doozy.Engine.UI.Base
         {
             if (effect == null) return this;
             Effect = effect;
-            return this;
-        }
-        
-        /// <summary> Set a new SoundyData that will be used by Soundy to play a sound when this UIAction is invoked </summary>
-        /// <param name="soundyData"> SoundyData used by Soundy to play a sound when this UIAction is invoked </param>
-        public UIAction SetSoundyData(SoundyData soundyData)
-        {
-            if (soundyData == null) return this;
-            SoundData = soundyData;
             return this;
         }
 

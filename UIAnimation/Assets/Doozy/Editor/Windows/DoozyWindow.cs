@@ -32,7 +32,6 @@ namespace Doozy.Editor.Windows
         protected override void OnDisable()
         {
             base.OnDisable();
-            StopAllSounds();
         }
 
         protected override void OnDestroy()

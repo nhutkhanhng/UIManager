@@ -3,7 +3,7 @@
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
 
 using Doozy.Editor.Internal;
-using Doozy.Editor.Soundy;
+
 using Doozy.Engine.UI.Input;
 using Doozy.Engine.Utils;
 using UnityEditor;
@@ -254,7 +254,7 @@ namespace Doozy.Editor.UI.Input
                     m_animatorEventsExpanded.value = false;
                     m_gameEventsExpanded.value = false;
                     m_unityEventsExpanded.value = false;
-                    SoundyAudioPlayer.StopAllPlayers();
+                    
                 }
 
                 GUILayout.Space(DGUI.Properties.Space());
@@ -274,7 +274,7 @@ namespace Doozy.Editor.UI.Input
                     m_animatorEventsExpanded.target = true;
                     m_gameEventsExpanded.value = false;
                     m_unityEventsExpanded.value = false;
-                    SoundyAudioPlayer.StopAllPlayers();
+                    
                 }
 
                 GUILayout.Space(DGUI.Properties.Space());
@@ -294,7 +294,7 @@ namespace Doozy.Editor.UI.Input
                     m_animatorEventsExpanded.value = false;
                     m_gameEventsExpanded.target = true;
                     m_unityEventsExpanded.value = false;
-                    SoundyAudioPlayer.StopAllPlayers();
+                    
                 }
 
                 GUILayout.Space(DGUI.Properties.Space());
@@ -314,7 +314,7 @@ namespace Doozy.Editor.UI.Input
                     m_animatorEventsExpanded.value = false;
                     m_gameEventsExpanded.value = false;
                     m_unityEventsExpanded.target = true;
-                    SoundyAudioPlayer.StopAllPlayers();
+                    
                 }
             }
             GUILayout.EndHorizontal();

@@ -4,7 +4,6 @@
 
 using System;
 using Doozy.Editor.Internal;
-using Doozy.Editor.Soundy;
 using Doozy.Engine.Extensions;
 using Doozy.Engine.Progress;
 using Doozy.Engine.Utils;
@@ -304,7 +303,7 @@ namespace Doozy.Editor.Progress
                     m_animatorEventsExpanded.value = false;
                     m_gameEventsExpanded.value = false;
                     m_unityEventsExpanded.value = false;
-                    SoundyAudioPlayer.StopAllPlayers();
+                    
                 }
 
                 GUILayout.Space(DGUI.Properties.Space());
@@ -324,7 +323,7 @@ namespace Doozy.Editor.Progress
                     m_animatorEventsExpanded.target = true;
                     m_gameEventsExpanded.value = false;
                     m_unityEventsExpanded.value = false;
-                    SoundyAudioPlayer.StopAllPlayers();
+                    
                 }
 
                 GUILayout.Space(DGUI.Properties.Space());
@@ -344,7 +343,7 @@ namespace Doozy.Editor.Progress
                     m_animatorEventsExpanded.value = false;
                     m_gameEventsExpanded.target = true;
                     m_unityEventsExpanded.value = false;
-                    SoundyAudioPlayer.StopAllPlayers();
+                    
                 }
 
                 GUILayout.Space(DGUI.Properties.Space());
@@ -364,7 +363,7 @@ namespace Doozy.Editor.Progress
                     m_animatorEventsExpanded.value = false;
                     m_gameEventsExpanded.value = false;
                     m_unityEventsExpanded.target = true;
-                    SoundyAudioPlayer.StopAllPlayers();
+                    
                 }
             }
             GUILayout.EndHorizontal();

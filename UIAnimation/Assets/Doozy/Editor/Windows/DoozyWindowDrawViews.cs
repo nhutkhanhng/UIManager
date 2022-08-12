@@ -110,7 +110,8 @@ namespace Doozy.Editor.Windows
                 DrawView(DrawViewDrawers, GetAnimBool(View.Drawers), ViewContentLeftHorizontalPadding, ViewContentRightHorizontalPadding);
                 DrawView(DrawViewPopups, GetAnimBool(View.Popups), ViewContentLeftHorizontalPadding, ViewContentRightHorizontalPadding);
                 // DrawView(DrawViewNody, GetAnimBool(View.Nody), ViewContentLeftHorizontalPadding, ViewContentRightHorizontalPadding);
-                DrawView(DrawViewSoundy, GetAnimBool(View.Soundy), ViewContentLeftHorizontalPadding, ViewContentRightHorizontalPadding);
+                // DrawView(DrawViewSoundy, GetAnimBool(View.Soundy), ViewContentLeftHorizontalPadding, ViewContentRightHorizontalPadding);
+
                 DrawView(DrawViewTouchy, GetAnimBool(View.Touchy), ViewContentLeftHorizontalPadding, ViewContentRightHorizontalPadding);
                 DrawView(DrawViewAnimations, GetAnimBool(View.Animations), ViewContentLeftHorizontalPadding, ViewContentRightHorizontalPadding);
                 DrawView(DrawViewTemplates, GetAnimBool(View.Templates), ViewContentLeftHorizontalPadding, ViewContentRightHorizontalPadding);
@@ -152,12 +153,6 @@ namespace Doozy.Editor.Windows
             ResetRenameCategory();
             ResetSearchDatabase();
 
-            ResetCreateNewSoundDatabase();
-            ResetRenameSoundDatabase();
-            ResetSearchSoundyDatabase();
-
-            if (CurrentView == View.Soundy) StopAllSounds();
-
             switch (view)
             {
                 case View.General:
@@ -181,7 +176,7 @@ namespace Doozy.Editor.Windows
                 case View.Nody:
                     break;
                 case View.Soundy:
-                    InitViewSoundy();
+                    // InitViewSoundy();
                     break;
                 case View.Touchy:
                     break;

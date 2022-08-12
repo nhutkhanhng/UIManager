@@ -3,7 +3,7 @@
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
 using Doozy.Editor.Settings;
 using Doozy.Editor.Utils;
-using Doozy.Engine.Soundy;
+
 using Doozy.Engine.Themes;
 using Doozy.Engine.Touchy;
 using Doozy.Engine.UI.Animation;
@@ -78,7 +78,7 @@ namespace Doozy.Editor.Internal
             DoozyUtils.DisplayProgressBar("Hold on...", "Check Asset - NodyWindowSettings", 0.2f);
             // NodyWindowSettings.Instance.SetDirty(false);
             DoozyUtils.DisplayProgressBar("Hold on...", "Check Asset - SoundySettings", 0.3f);
-            SoundySettings.Instance.SetDirty(false);
+            //SoundySettings.Instance.SetDirty(false);
             DoozyUtils.DisplayProgressBar("Hold on...", "Check Asset - ThemesSettings", 0.35f);
             ThemesSettings.Instance.SetDirty(false);
             DoozyUtils.DisplayProgressBar("Hold on...", "Check Asset - TouchySettings", 0.4f);
@@ -112,7 +112,7 @@ namespace Doozy.Editor.Internal
             DoozyUtils.DisplayProgressBar("Hold on...", "Check Asset - UIAnimations", 0.1f);
             UIAnimations.Instance.SetDirty(false);
             DoozyUtils.DisplayProgressBar("Hold on...", "Check Asset - SoundySettings", 0.15f);
-            SoundySettings.Database.SetDirty(false);
+            //SoundySettings.Database.SetDirty(false);
             DoozyUtils.DisplayProgressBar("Hold on...", "Check Asset - ThemesSettings", 0.2f);
             ThemesSettings.Database.SetDirty(false);
             DoozyUtils.DisplayProgressBar("Hold on...", "Check Asset - UIButtonSettings", 0.3f);
@@ -141,9 +141,9 @@ namespace Doozy.Editor.Internal
 
             //SOUNDY
             DoozyUtils.DisplayProgressBar("Hold on...", "Soundy - Search For Unregistered Databases", 0.1f);
-            SoundySettings.Database.SearchForUnregisteredDatabases(false);
+            // SoundySettings.Database.SearchForUnregisteredDatabases(false);
             DoozyUtils.DisplayProgressBar("Hold on...", "Soundy - Refresh", 0.15f);
-            SoundySettings.Database.RefreshDatabase(false, true);
+            //SoundySettings.Database.RefreshDatabase(false, true);
 
             //THEMES
             DoozyUtils.DisplayProgressBar("Hold on...", "Themes - Search For Unregistered Themes", 0.2f);

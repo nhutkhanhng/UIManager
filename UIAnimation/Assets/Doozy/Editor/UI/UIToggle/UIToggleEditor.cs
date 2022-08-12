@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 using Doozy.Editor.Internal;
-using Doozy.Editor.Soundy;
+
 using Doozy.Editor.UI.Animation;
 using Doozy.Engine.Extensions;
 using Doozy.Engine.UI;
@@ -136,7 +136,7 @@ namespace Doozy.Editor.UI
         protected override void OnDisable()
         {
             base.OnDisable();
-            SoundyAudioPlayer.StopAllPlayers();
+            
             if (UIAnimatorUtils.PreviewIsPlaying) UIAnimatorUtils.StopButtonPreview(Target.RectTransform, Target.CanvasGroup);
         }
 
@@ -423,8 +423,6 @@ namespace Doozy.Editor.UI
                                 onToggleOnExpanded.value = false;
                                 onToggleOffExpanded.value = false;
                             }
-
-                            SoundyAudioPlayer.StopAllPlayers();
                         }
 
                         if (enabledProperty.boolValue)
@@ -598,7 +596,6 @@ namespace Doozy.Editor.UI
                                         animationTypeExpanded.target = true;
                                         onToggleOnExpanded.value = false;
                                         onToggleOffExpanded.value = false;
-                                        SoundyAudioPlayer.StopAllPlayers();
                                     }
 
                                     GUILayout.Space(DGUI.Properties.Space());
@@ -614,7 +611,6 @@ namespace Doozy.Editor.UI
                                         animationTypeExpanded.value = false;
                                         onToggleOnExpanded.target = true;
                                         onToggleOffExpanded.value = false;
-                                        SoundyAudioPlayer.StopAllPlayers();
                                     }
 
                                     GUILayout.Space(DGUI.Properties.Space());
@@ -630,7 +626,6 @@ namespace Doozy.Editor.UI
                                         animationTypeExpanded.value = false;
                                         onToggleOnExpanded.value = false;
                                         onToggleOffExpanded.target = true;
-                                        SoundyAudioPlayer.StopAllPlayers();
                                     }
                                 }
                                 GUILayout.EndHorizontal();
@@ -960,7 +955,7 @@ namespace Doozy.Editor.UI
                         m_animatorEventsExpanded.value = false;
                         m_gameEventsExpanded.value = false;
                         m_unityEventsExpanded.value = false;
-                        SoundyAudioPlayer.StopAllPlayers();
+                        
                     }
 
                     GUILayout.Space(DGUI.Properties.Space());
@@ -980,7 +975,7 @@ namespace Doozy.Editor.UI
                         m_animatorEventsExpanded.target = true;
                         m_gameEventsExpanded.value = false;
                         m_unityEventsExpanded.value = false;
-                        SoundyAudioPlayer.StopAllPlayers();
+                        
                     }
 
                     GUILayout.Space(DGUI.Properties.Space());
@@ -1000,7 +995,7 @@ namespace Doozy.Editor.UI
                         m_animatorEventsExpanded.value = false;
                         m_gameEventsExpanded.target = true;
                         m_unityEventsExpanded.value = false;
-                        SoundyAudioPlayer.StopAllPlayers();
+                        
                     }
 
                     GUILayout.Space(DGUI.Properties.Space());
@@ -1020,7 +1015,7 @@ namespace Doozy.Editor.UI
                         m_animatorEventsExpanded.value = false;
                         m_gameEventsExpanded.value = false;
                         m_unityEventsExpanded.target = true;
-                        SoundyAudioPlayer.StopAllPlayers();
+                        
                     }
                 }
                 GUILayout.EndHorizontal();

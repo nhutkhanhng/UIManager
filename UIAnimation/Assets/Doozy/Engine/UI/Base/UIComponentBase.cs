@@ -4,7 +4,6 @@
 
 using System.Collections.Generic;
 using Doozy.Engine.Settings;
-using Doozy.Engine.Soundy;
 using Doozy.Engine.UI.Animation;
 using Doozy.Engine.UI.Input;
 using UnityEngine;
@@ -155,7 +154,6 @@ namespace Doozy.Engine.UI.Base
 		public virtual void Awake()
 		{
 			BackButton.Init();
-			SoundyManager.Init();
 			Database.Add(GetComponent<T>());
 			UpdateStartValues();
 		}
